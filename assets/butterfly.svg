@@ -1,95 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 800 700"
-     width="800"
-     height="700">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <style>
+    .line {
+      fill: none;
+      stroke: #1565C0; /* Deep geometric blue */
+      stroke-width: 6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .dot {
+      fill: #1565C0;
+    }
+  </style>
 
-<style>
-.w {
-  fill: none;
-  stroke: #1565C0;
-  stroke-width: 4;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.n {
-  fill: #1565C0;
-}
-</style>
+  <line class="line" x1="400" y1="360" x2="400" y2="610" />
 
-<!-- Left outer contour -->
-<path class="w" d="
-M400 400
-L330 280
-L150 120
-L180 280
-L300 300
-L250 500
-L180 620
-L260 560
-L320 520
-L400 400"/>
+  <g id="right-half">
+    <path class="line" d="M 400 360 L 420 410 L 400 460 L 425 550 L 400 610" />
 
-<!-- Right outer contour -->
-<path class="w" d="
-M400 400
-L470 280
-L650 120
-L620 280
-L500 300
-L550 500
-L620 620
-L540 560
-L480 520
-L400 400"/>
+    <line class="line" x1="410" y1="370" x2="440" y2="260" />
+    <circle class="dot" cx="440" cy="260" r="6" />
 
-<!-- Upper left mesh -->
-<line class="w" x1="150" y1="120" x2="250" y2="280"/>
-<line class="w" x1="150" y1="120" x2="330" y2="280"/>
-<line class="w" x1="180" y1="280" x2="330" y2="280"/>
-<line class="w" x1="250" y1="280" x2="300" y2="300"/>
-<line class="w" x1="180" y1="280" x2="300" y2="300"/>
-<line class="w" x1="250" y1="280" x2="400" y2="400"/>
-<line class="w" x1="300" y1="300" x2="400" y2="400"/>
+    <path class="line" d="M 400 460 L 450 310 L 550 220 L 700 150 L 670 320 L 580 480 Z" />
+    
+    <path class="line" d="M 400 460 L 520 390 L 450 310" />
+    <path class="line" d="M 520 390 L 550 220 L 670 320 L 520 390 L 580 480" />
 
-<!-- Lower left mesh -->
-<line class="w" x1="250" y1="500" x2="320" y2="520"/>
-<line class="w" x1="250" y1="500" x2="180" y2="620"/>
-<line class="w" x1="320" y1="520" x2="260" y2="560"/>
-<line class="w" x1="250" y1="500" x2="400" y2="400"/>
-<line class="w" x1="320" y1="520" x2="400" y2="400"/>
+    <path class="line" d="M 580 480 L 620 540 L 570 630 L 580 710 L 520 680 L 440 580 L 400 460" />
+    
+    <path class="line" d="M 400 460 L 510 560 L 580 480" />
+    <path class="line" d="M 510 560 L 620 540" />
+    <path class="line" d="M 510 560 L 570 630 L 520 680 L 510 560 L 440 580" />
+  </g>
 
-<!-- Upper right mesh -->
-<line class="w" x1="650" y1="120" x2="550" y2="280"/>
-<line class="w" x1="650" y1="120" x2="470" y2="280"/>
-<line class="w" x1="620" y1="280" x2="470" y2="280"/>
-<line class="w" x1="550" y1="280" x2="500" y2="300"/>
-<line class="w" x1="620" y1="280" x2="500" y2="300"/>
-<line class="w" x1="550" y1="280" x2="400" y2="400"/>
-<line class="w" x1="500" y1="300" x2="400" y2="400"/>
-
-<!-- Lower right mesh -->
-<line class="w" x1="550" y1="500" x2="480" y2="520"/>
-<line class="w" x1="550" y1="500" x2="620" y2="620"/>
-<line class="w" x1="480" y1="520" x2="540" y2="560"/>
-<line class="w" x1="550" y1="500" x2="400" y2="400"/>
-<line class="w" x1="480" y1="520" x2="400" y2="400"/>
-
-<!-- Central body -->
-<line class="w" x1="400" y1="300" x2="400" y2="530"/>
-<line class="w" x1="360" y1="250" x2="400" y2="300"/>
-<line class="w" x1="440" y1="250" x2="400" y2="300"/>
-<line class="w" x1="360" y1="250" x2="400" y2="400"/>
-<line class="w" x1="440" y1="250" x2="400" y2="400"/>
-
-<!-- Antennae -->
-<line class="w" x1="370" y1="250" x2="340" y2="150"/>
-<line class="w" x1="430" y1="250" x2="460" y2="150"/>
-
-<circle class="n" cx="340" cy="150" r="6"/>
-<circle class="n" cx="460" cy="150" r="6"/>
-
-<!-- Research-style hub -->
-<circle class="n" cx="400" cy="400" r="8"/>
-
+  <use href="#right-half" transform="translate(800, 0) scale(-1, 1)" />
 </svg>
-
