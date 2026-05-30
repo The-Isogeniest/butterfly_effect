@@ -3,7 +3,7 @@
 <div align="center">
 
 
-### Multi-Key Fully Homomorphic Encryption from Ring Learning With Rounding
+### Butterfly Effect: Multi-Key FHE from Ring-LWR
 #   <img src="assets/butterfly.svg" width="80"> 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![Security](https://img.shields.io/badge/Security-128--bit-green)
