@@ -68,7 +68,7 @@ def _get_error_c2(del_r, k, d, l, t, s_i=1, w=2, security_level=128, modulo_diff
 def benchmark_construction1(k_parties: int = 2, attempts: int = 10) -> None:
     """Run Construction 1 depth benchmarks over the paper's parameter sets."""
     print("\n" + "=" * 70)
-    print("  Construction 1 (RLWR-MKFHE on Kim–Park–Park 2024)")
+    print("  Construction 1 (RLWR-MKFHE from Bolboceanu et al. (ePrint 2024/960.)")
     print(f"  k = {k_parties} parties,  {attempts} trials per parameter set")
     print("=" * 70)
 
